@@ -1,0 +1,357 @@
+/* FUENTES */
+@font-face {
+    font-family: nevis;
+    src: url(./fonts/nevis.eot);
+    src: url(./fonts/nevis.eot?#iefix) format("embedded-opentype"),
+            url(./fonts/nevis.woff) format("woff"),
+            url(./fonts/nevis.ttf) format("truetype"),
+            url(./fonts/nevis.svg) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: fajala;
+    src: url(./fonts/FjallaOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ESTILOS MAQUETACION */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(../img/paven.png);
+}
+
+/* CABECERA */
+#cabecera{
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+#logo img{
+    display: block;
+    width: 140px;
+    margin: 0px auto;
+    padding-top: 20px;
+    text-align: center;
+}
+#slogan{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #71B053;
+    text-shadow: 0px 2px 1px #333333;
+    font-size: 25px;
+    font-family: "nevis";
+    letter-spacing: 4px;
+    margin-top: 10px;
+    transition: all 300ms;
+}
+#slogan:hover{
+    text-shadow: 0px 3px 2px green;
+}
+#slogan a{
+    color: #71B053;
+}
+/* MENU */
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 20px gray;
+}
+#nav ul{
+    list-style: none;
+    margin: 0px auto;
+    width: 1090px;
+}
+nav > ul > li{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+}
+nav > ul > li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 300ms;
+}
+nav > ul > li a:first-child{
+    border-left: 1px solid gray;
+}
+/* EFECTO HOVER */
+nav > ul > li:hover{
+    background-color: #71B053;
+    box-shadow: 0px 0px 40px green inset;
+}
+
+/* MENU DESPLEGABLE */
+nav > ul >li >ul{
+    display: none;
+    position: absolute;
+    max-width: 160px;
+    box-shadow: 0px 2px 2px gray ;
+}
+nav > ul > li:hover > ul{
+    display: block;
+}
+nav > ul > li:hover > ul > li{
+    background-color: #f6f7f8;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+}
+nav > ul > li:hover > ul > li > a {
+    color: black;
+    border: none;
+}
+nav > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 6px lightgray inset;
+}
+
+a{
+    color: #65a826;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+}
+
+/* INICIO FORMULARIO */
+input[type="submit"]{
+    background-color: #65a826;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    margin: 5px auto;
+    margin-bottom: 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px lightgrey;
+    cursor: pointer;
+    transition: all 300ms;
+}
+input[type="submit"]:hover{
+    background-color: green;
+  
+}
+input[type="password"],
+input[type="text"]{
+   
+    border: none;
+    width: 100%;
+    margin: 5px auto;
+    box-shadow: 0px 2px 4px lightgrey;
+    background-color: white;
+    color: gray;
+    padding: 1px 2px 1px 2px;
+    transform: all 300ms;
+}
+input[type="password"]:focus,
+input[type="text"]:focus{
+    border: 1px solid #70b231;
+    color: black;
+
+}
+
+/* FIN FORMULARIO */
+
+/*CONTENIDO WEB*/
+#content{
+    min-height: 1100px;
+    width: 1250px;
+    margin: 0px auto;
+    padding: 30px;
+}
+/*INICIO BARRA LATERAL*/
+#aside{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    text-align: center;
+    
+}
+#aside .widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    border-bottom: 2px dotted lightgray;
+    font-size: 14px;
+    padding: 10px;
+
+}
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#aside h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background-color: #f2f3f2;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+
+}
+#aside div label,
+#aside div form {
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+}
+#enlaces li{
+    margin: 5px 5px 5px 20px;
+    list-style: square;
+    
+}
+#enlaces ul{
+    text-align: left;
+}
+
+#enlace-sup a{
+    display: block;
+    text-align: center;
+}
+#aula-virtual-1 h3{
+    color: blue;
+}
+#aula-virtual-2 h3{
+    color: red;
+}
+
+
+/* FIN BARRA LATERAL */
+
+/* INICIO FRASE DEL DIA */
+#frase,
+.perro-leo{
+    width: 180px;
+    float: left;
+    margin: 30px;
+    padding: 10px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    text-align: left;
+    transition: all 5s;
+}
+.perro-leo:hover{
+    /* cursor: pointer; */
+    width: 400px;
+    box-shadow: inset;
+}
+/* FIN FRASE DEL DIA */
+
+/* INICIO SECCION NOTICIAS */
+#sections{
+    float: right;
+    width: 75%;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family: sans-serif, arial, helvetica;
+}
+
+#front,
+#back,
+#instructor{
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 20px 10px 10px 20px;
+    box-shadow: 0px 2px 4px #ccc;
+    background-color: white;
+    color: #333333;
+    font-size: 16px;
+}
+
+#sections h2{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: fajala;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+article{
+    margin-bottom: 20px;
+}
+.date{
+    color: lightgray;
+    font-size: 14px;
+}
+.pegatina{
+    position: absolute;
+    margin-top: -38px;
+}
+.pegatina img:last-child{
+    position: absolute;
+    margin-left: 800px;
+}
+#back h2{
+    color: red;
+}
+#instructor h2{
+    color:darkgoldenrod;
+}
+.material-icons{
+    color: red;
+    font-size: 15px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#historico{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* FIN SECCION NOTICIAS */
+
+/* INICIO footer */
+footer{
+   
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 20px gray;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* FIN footer */
+
+
+
+
+
